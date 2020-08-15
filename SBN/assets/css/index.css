@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,700&display=swap');
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);
+
+/*=========================================*/
+/* Header styles
+/*=========================================*/
+*{
+
+    margin: 0;
+    padding: 0;
+}
+body{
+  overflow-x: hidden;
+}
+
+header {
+	margin: 0 auto;
+	position: relative;
+	width: 940px;
+    z-index: 20;
+    vertical-align: middle;
+}
+
+#logo {
+	margin: 0 auto;
+	min-height: 92px;
+	overflow: hidden;
+	padding: 0 20px;
+	position: relative;
+    width: 160px;
+	z-index: 20;
+    text-align: center;
+}
+#logo h1 a { display: block; }
+#logo h1 a span { margin-left: -999999px; }
+
+#primary-menu {
+    position: absolute;
+	top: 100px;
+	left: 0;
+	text-transform: uppercase;
+  width: 100%;
+  overflow: hidden;
+
+    z-index: 10;
+}
+#primary-menu .split-menu {
+	float: left;
+	width: 320px;
+}
+#primary-menu .right-menu { float: right; }
+
+/* parent menu */
+#primary-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 36px;
+    text-align: center;
+}
+#primary-menu ul li {
+
+	position: relative;
+    display: inline-block;
+    z-index: 40;
+	*display: inline;
+	zoom: 1;
+}
+
+#primary-menu ul a {
+	color: #333;
+	display: block;
+	font: normal normal 13px 'Rockwell', serif;
+	line-height: 36px;
+	padding: 0 20px;
+	position: relative;
+	text-decoration: none;
+}
+#primary-menu ul a:hover { color: #bd7ac4; }
+
+/* Media queries
+/*=========================================*/
+@media screen and (max-width: 1035px) {
+	header {
+    
+		width: auto;
+	    max-width: 720px;
+    }
+
+	#primary-menu {
+
+		display: block;
+		margin-top: 20px;
+        position: static;
+ 
+
+	}
+	#primary-menu .split-menu {
+		float: left;
+        width: 50%;
+
+
+    }
+    #primary-menu ul a {
+        font-size:11px; }
+
+
+	#primary-menu .left-menu > ul { text-align: right; }
+	#primary-menu .right-menu > ul { text-align: left; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px){
+
+
+    .top{
+    overflow-x: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 300px;
+    max-height: 400px;
+    min-height: 400px;
+    max-width: 300px;
+    position: relative;
+    top: -100px;
+    left: 20px;
+
+    
+}
+.booking .middle{
+
+    display: block;
+    position: relative;
+    top: -350px;
+    width: 100%;
+    overflow: hidden;
+    height: 320px;
+}
+.booking{ 
+
+    max-width: 100%; 
+    font-family: Montserrat;
+    position: relative;
+    text-align: center;
+    color:black;
+    font-weight: bold;
+    font-size: 60px;
+    color: white;
+    min-width: 300px;
+
+
+}
+.booking .centered {
+    position: absolute;
+    bottom: 130%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .booking .btn{
+    position: absolute;
+    bottom: 115%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgb(0, 0, 0);
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 24px;
+    border: none;
+    cursor: pointer;
+  }
+ .about{
+     margin-top: -320px;
+
+ }
+ .about h2{
+     font-family: Montserrat;
+     color: black;
+     font-weight: bold;
+     font-size: 40px;
+     text-transform: uppercase;
+     text-align: center;
+
+ }
+ .about p{
+     font-family: Montserrat;
+     font-size: 12;
+     padding: 25px;
+     text-align: center;
+
+    
+
+ }
+}
+
+
+@media screen and (min-width: 700px){
+    hr{ 
+        margin: 15px;
+        max-width: 700px;
+        border-top: 1px solid #E6D1D0;
+        display: block;
+      margin-left: auto;
+      margin-right: auto;
+
+
+    }
+    .top{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 300px;
+    max-height: 400px;
+    min-height: 400px;;
+    position: relative;
+    left: 20px;
+
+    
+}
+.booking .middle{
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 400px;
+    top: -350px;
+    min-width: 700px;
+
+}
+
+.booking{
+    position: relative;
+    text-align: center;
+    color:black;
+    font-weight: bold;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    font-family: Montserrat;
+
+}
+.booking .centered {
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .booking .btn{
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 24px;
+    border: none;
+    cursor: pointer;
+
+  }
+  .about{
+    margin-top: -320px;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+
+
+}
+.about h2{
+    font-family: Montserrat;
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    float: left;
+    padding-right: 30px;
+
+}
+.about p{
+    font-family: Montserrat;
+    font-size: 12;
+    padding: 25px;
+    text-align: justify;
+    float: inline-end;
+
+   
+
+}
+}
+.order{
+    text-align: center;
+    font-weight: bold;
+    font-family: Montserrat;
+    font-size: 35px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 700px;
+    margin: 30px;
+    grid-gap: 10px;
+    align-items: stretch;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    }
+  
+  .grid > article {
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+
+  }
+  .grid > article > button > a{
+    text-decoration: none;
+    color: black;
+  }
+  .grid > article:hover{
+    transition: transform .1s ease-out;
+    transform: translateY(5px);
+  }
+  
+  .grid > article img {
+    width: 100%;
+    overflow: hidden;
+
+  }
+  
+  
+  .text {
+    padding-bottom: 20px;
+  }
+  
+  .text > h3{
+    text-transform: uppercase;
+  }
+  
+  .text > button {
+    font-family: Montserrat;
+    background: #E6D1D0;
+    border: 0;
+    color: black;
+    padding: 10px;
+    width: 100%;
+    overflow: hidden;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+  }
+  
+  
+  @media (max-width: 780px){
+ 
+      hr{
+        margin: 15px;
+        max-width: 300px;
+        border-top: 1px solid #E6D1D0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+  
+      }
+    .grid{
+      grid-template-columns: repeat(1, 1fr);
+      display: block;
+      margin-left: 200px;
+      margin-right: 200px;
+    }
+  
+    .grid > article{
+      text-align: center;
+      text-decoration: none;
+      color: black;
+    }
+  
+  
+  
+  }
+  
+  @media (max-width: 500px){
+      hr{
+        margin: 15px;
+        max-width: 300px;
+        border-top: 1px solid #E6D1D0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+      }
+    .grid{
+      grid-template-columns: repeat(1, 1fr);
+      display: block;
+      margin-left: 90px;
+      margin-right: 90px;
+    }
+  
+    .grid > article{
+      text-align: center;
+      text-decoration: none;
+      color: black;
+    }
+
+    
+  }
+
+  .Instafeed a  {
+    text-decoration: none;
+    color: black;
+  }
+  .Instafeed { 
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+    background-color: white;
+    font-weight: bold;
+    font-family: Montserrat;
+    color:black;
+    max-width: 800px;
+    min-width: 300px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+  }
+  .Instafeed h1 {
+    color:  #E6D1D0;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  .Instafeed p {
+    font-size: 20px;
+  }
+  .Instafeed img {
+    width: 70%;
+    padding: 20px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  footer{
+    position: relative;
+    bottom:-80px;
+    width:100%;
+    left: auto;
+    right: auto;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+   font-family: "Open Sans",sans-serif;
+    background: #E6D1D0;
+    padding: 20px 0;
+  }
+ 
+  .footer_container > p{
+    font-family: "Open Sans",sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+ 
+ 
+  }
+  
+  
+  .social_media{
+    margin: 20px 150px;
+  }
+  
+  .social_media a{
+    color: #000;
+    font-size: 24px;
+    text-decoration: none;
+    transition: .6s;
+  }
+  
+  .social_media a:hover{
+    color: pink;
+  }
+ 
+  
+ 
